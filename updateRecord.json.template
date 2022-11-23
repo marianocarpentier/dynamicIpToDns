@@ -1,0 +1,18 @@
+{
+  "Comment": "Update old IP address",
+  "Changes": [
+    {
+      "Action": "UPSERT",
+      "ResourceRecordSet": {
+        "Name": "{{DNS_RECORD_NAME}}",
+        "Type": "A",
+        "TTL": 60,
+        "ResourceRecords": [
+          {
+            "Value": "{{IP_ADDRESS}}"
+          }
+        ]
+      }
+    }
+  ]
+}
